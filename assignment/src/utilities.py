@@ -11,7 +11,6 @@ class Test_utilities():
         api = ApiController()
         for i in range(5):
             name = self.generate_Random_Name()
-            print(name)
             age = api.get_Age_By_Name(name)
             gender = api.get_Gender_By_Name(name)
             json_nationality = api.get_Nationality_By_Name(name)
@@ -46,3 +45,5 @@ class Test_utilities():
             if probability > max :
                 max = probability
         return max
+
+    

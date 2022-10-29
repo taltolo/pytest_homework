@@ -1,10 +1,6 @@
 import requests
 
-
 class ApiController():
-
-    def __init__(self):
-        pass
     
     def get_Age_By_Name(self,name, url="https://api.agify.io?name="):
         req = url + name
