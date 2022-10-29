@@ -9,5 +9,5 @@ than in the comand line run: pytest -q .\test_api.py
 
 If you prefer to run the Dockerfile
 In the project directory run:
-docker build -t <imagename> .
-docker run <imagename>
+docker build -t "imagename" .
+docker run "imagename"
