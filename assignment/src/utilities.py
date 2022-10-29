@@ -23,7 +23,7 @@ class Test_utilities():
         return person_list
 
     def generate_Random_Name(self) -> str:
-        # Choicing a name from the set by calling random
+        # Choosing a name from the set by calling random
         # Removing the name that has been chosen 
         # To avoid duplication 
         name = random.choices(list(self.name_set))
