@@ -2,7 +2,9 @@ import pytest
 from src.apiController import ApiController as api
 from src.utilities import Test_utilities as Utils
 
-def test_preper_person(person):
+def test_validate_person(person: object):
+    # Validating the data integrity against the APIs
+    # By assert each person's attribute   
     server_api = api()
     utils = Utils()
     assert person.get_age() == server_api.get_Age_By_Name(person.get_name())
